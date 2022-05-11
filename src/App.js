@@ -1,9 +1,2 @@
-import React from "react";
-
-export function App (){
-    return(
-        <div>
-            Hello World
-        </div>
-    )
-}
+const root = document.querySelector('#root')
+root.innerHTML = 'hello, webpack!'
