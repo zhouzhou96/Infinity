@@ -4,11 +4,26 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: resolve(PROJECT_PATH, './src/index.js'),
+    app: resolve(PROJECT_PATH, './src/index.tsx'),
   },
   output: {
     filename: `js/[name]${isDev ? '' : '.[hash:8]'}.js`,
     path: resolve(PROJECT_PATH, './dist'),
+  },
+  // 定义好后缀名之后import 可以不写后缀
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.json'],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(tsx?|js)$/,
+        loader: 'babel-loader',
+        // cacheDirectory: true 将公共文件缓存起来，下次编译更快
+        options: { cacheDirectory: true },
+        exclude: /node_modules/,
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
