@@ -1,0 +1,4 @@
+{
+  // "presets" 为一个插件合集
+  "presets": ["@babel/preset-react"]
+}
