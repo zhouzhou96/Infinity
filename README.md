@@ -16,4 +16,5 @@
 13. npm install babel-loader @babel/core @babel/preset-react -D 安装 webpack 识别 jsx 的 loaders
 14. 根目录新建 .babelrc 文件 增加 presets 属性
 15. npm install @babel/preset-typescript -D 安装 webpack 识别 ts 的 loaders
+16. npx tsc --init 生成 tsconfig.json
     ------------2022.5.12
