@@ -1,4 +1,5 @@
 import React from 'react'
+import Login from './Pages/Login'
 
 interface IProps {
   name: string
@@ -10,6 +11,7 @@ export default function App(props: IProps) {
   return (
     <div className="app">
       <span>{`Hello I'm ${name}, ${age} years old.`}</span>
+      <Login />
     </div>
   )
 }

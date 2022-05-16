@@ -18,3 +18,6 @@
 15. npm install @babel/preset-typescript -D 安装 webpack 识别 ts 的 loaders
 16. npx tsc --init 生成 tsconfig.json
     ------------2022.5.12
+17. npm install antd --save 安装 ANTD 组件库
+18. npm install style-loader css-loader -D 安装样式 loader
+19. webpack 文件增加 rules use:['style-loader', 'css-loader']
