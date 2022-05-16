@@ -17,15 +17,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.(tsx?|js)$/,
         loader: 'babel-loader',
         // cacheDirectory: true 将公共文件缓存起来，下次编译更快
         options: { cacheDirectory: true },
         exclude: /node_modules/,
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
       },
     ],
   },
