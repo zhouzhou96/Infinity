@@ -106,5 +106,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* [忽略所有的声明文件(*.d.ts)的类型检查] Skip type checking all .d.ts files. */
   },
+  // exclude 指定不需要编译得选项
   "exclude": ["node_modules"]
 }
